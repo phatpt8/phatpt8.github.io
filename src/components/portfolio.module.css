@@ -24,19 +24,40 @@
   background-color: #eae8e9;
   display: flex;
   position: relative;
+  padding: 4px 8px;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.red {
+  background: #f96256;
+}
+
+.yellow {
+  background: #fdbc3d;
+}
+
+.green {
+  background: #33c948;
 }
 
 .terminalWindow {
-  min-height: 254px;
-  max-height: 60vh;
+  height: 254px;
   padding: 0.5rem 1rem;
   display: flex;
   flex-direction: column;
+  overflow-x: scroll;
 }
 
 .directory {
   color: #75e1e7;
   font-weight: 500;
+  margin: 0 4px;
 }
 
 .success {
@@ -62,11 +83,14 @@
   background: rgba(255, 255, 255, 0.2);
   position: absolute;
   top: 0;
-  right: -10px;
+  right: -4px;
   animation: blink 1s step-start 0s infinite;
 }
 
 .input {
   opacity: 0;
   filter: alpha(opacity=0);
+}
+
+.terminalLine {
 }
